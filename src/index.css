@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Luxurious Roman", serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:url(/bg.jpg) yellow center/cover no-repeat;
+}
+
+#root {
+  width: 100%;
+}
+
+.conversor-moneda {
+  margin: 0 auto;
+  padding: 40px 30px 50px 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  backdrop-filter: blur(30px);
+  background: transparent;
+  border: solid white 1px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 1);
+}
+
+.conversor-moneda .conversor-titulo {
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.conversor-moneda .conversor-form {
+  margin-top: 45px;
+}
+
+.conversor-form .form-grupo {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.conversor-form .form-grupo .form-label {
+  color: #fff;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 9px;
+  font-size: 1rem;
+}
+
+.conversor-form .form-grupo .input-form {
+  font-size: 1.1rem;
+  padding: 0 15px;
+  font-weight: 500;
+  min-height: 48px;
+  border-radius: 5px;
+  background: rgb(152, 218, 136);;
+  border: solid rgb(0, 0, 0) 1px;
+  outline: none;
+}
+
+.conversor-form .form-grupo-moneda {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.form-grupo .seleccion-moneda {
+  display: flex;
+  padding: 0 10px;
+  min-height: 45px;
+  align-items: center;
+  background: rgb(152, 218, 136);
+  border: solid rgb(0, 0, 0) 1px;
+  border-radius: 6px;
+}
+
+.form-grupo .seleccion-moneda img {
+  width: 40px;
+}
+
+.form-grupo .seleccion-moneda .Desplegable-monedas {
+  outline: none;
+  border: none;
+  background: none;
+  font-weight: 500;
+  padding: 0 10px 0 5px;
+}
+
+.form-grupo .seleccion-moneda .Desplegable-monedas option {
+  font-weight: 500;
+}
+
+.form-grupo .icono-cambio {
+  height: 40px;
+  width: 40px;
+  border: solid rgb(0, 0, 0) 1px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.form-grupo .icono-cambio:hover {
+  background: rgb(152, 218, 136);;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out ;
+}
+
+.conversor-form .boton-aceptar {
+  width: 100%;
+  min-height: 45px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  border: solid rgb(0, 0, 0) 1px;
+}
+
+.conversor-form .boton-aceptar:hover {
+  background: rgb(152, 218, 136);
+  transition: all 0.3s ease-in-out ;
+}
+
+.conversor-form .resultado-conversion {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  background: transparent;
+  padding: 25px 0;
+
+}
